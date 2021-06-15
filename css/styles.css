@@ -6,7 +6,7 @@
   --secondary-text-color: #212121;
   --white-text-color: #ffffff;
   --accent-color: #2196f3;
-  --main-duration: 2000ms;
+  --main-duration: 250ms;
   --main-trans-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
