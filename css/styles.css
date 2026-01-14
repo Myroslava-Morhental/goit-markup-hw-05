@@ -660,13 +660,13 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .contact-form-field:focus-within .contact-form-input {
+.contact-form-field:focus-within .contact-form-input {
   border-color: #4d5ae5;
 }
 
 .contact-form-field:focus-within .contact-form-icon {
   fill: #4d5ae5;
-} */
+}
 
 .contact-form-textarea {
   height: 120px;
