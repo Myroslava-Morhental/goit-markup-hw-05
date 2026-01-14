@@ -511,6 +511,7 @@ header {
   border-radius: 4px;
   background-color: #4d5ae5;
   color: #fff;
+  cursor: pointer;
   border: 1px solid transparent;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -543,7 +544,7 @@ header {
   opacity: 0;
   pointer-events: none;
   transition-property: opacity;
-  transition-duration: 2000ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -610,7 +611,6 @@ header {
   text-align: center;
   color: #2e2f42;
 }
-/* hikjkl.,/lk.kvbkl/;"fggggggggg */
 
 .contact-form-field {
   display: flex;

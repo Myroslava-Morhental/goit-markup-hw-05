@@ -54,11 +54,13 @@
       </div>
     </header>
     <main>
-      <!--section 1-->
+      <!--Hero section -->
       <section class="section hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--section 2-->
@@ -592,10 +594,10 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="hero-overlay">
+    <div class="hero-overlay" data-modal>
       <div class="hero-modal">
         <form class="contact-form" name="contact-form">
-          <button type="button" class="modal-close-button">
+          <button type="button" class="modal-close-button" data-modal-close>
             <svg class="modal-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -674,5 +676,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
