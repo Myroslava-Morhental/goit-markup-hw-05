@@ -462,7 +462,7 @@ header {
 }
 
 .subscribe-form-wrapper {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .subscribe-form {
@@ -529,7 +529,7 @@ header {
 
 /* Overlay and hero modal */
 
-.hero-overlay {
+.hero-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -539,24 +539,29 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
   background-color: rgba(46, 47, 66, 0.4);
+
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition-property: opacity;
+
+  transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-overlay.is-open {
+.hero-backdrop.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .hero-modal {
   position: relative;
-  max-width: 408px;
-  max-height: 584px;
+  width: 408px;
+  min-height: 584px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 72px;
@@ -566,6 +571,13 @@ header {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   overflow-y: auto;
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-backdrop:not(.is-open) .hero-modal {
+  transform: scale(1.5);
 }
 
 .contact-form {
@@ -710,6 +722,7 @@ header {
 .checkbox-label {
   display: flex;
   align-items: center;
+  gap: 8px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -723,7 +736,6 @@ header {
   align-items: center;
   width: 16px;
   height: 16px;
-  margin-right: 8px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition-property: background-color, border-color;

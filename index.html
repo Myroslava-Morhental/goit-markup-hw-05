@@ -578,7 +578,7 @@
                 name="subscribe-email"
                 placeholder="E-mail"
               />
-              <button class="subscribe-form-button">
+              <button class="subscribe-form-button" type="submit">
                 Subscribe<svg
                   class="subscribe-form-icon"
                   width="24"
@@ -594,7 +594,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="hero-overlay" data-modal>
+    <div class="hero-backdrop" data-modal>
       <div class="hero-modal">
         <form class="contact-form" name="contact-form">
           <button type="button" class="modal-close-button" data-modal-close>
@@ -661,6 +661,7 @@
               class="contact-form-checkbox visually-hidden"
               id="input-checkbox"
               type="checkbox"
+              name="policy-checkbox"
             />
             <label class="checkbox-label" for="input-checkbox"
               ><span class="custom-checkbox"
@@ -669,8 +670,8 @@
                     href="./images/icons.svg#icon-checkmark"
                   ></use></svg></span
               >I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="#">Privacy Policy</a>
             </label>
-            <a class="privacy-policy-link" href="#">Privacy Policy</a>
           </div>
           <button type="submit" class="hero-button">Send</button>
         </form>
