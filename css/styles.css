@@ -688,7 +688,6 @@ header {
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  outline: none;
   resize: none;
   font-weight: 400;
   font-size: 12px;
@@ -703,8 +702,9 @@ header {
   margin-bottom: 16px;
 }
 
-.contact-form-textarea:focus-within {
+.contact-form-textarea:focus {
   border-color: #4d5ae5;
+  outline: none;
 }
 
 .contact-form-textarea::placeholder {
